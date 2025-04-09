@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoundCanvas - Générateur d'Art Audio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
 </head>
 <body>
     <div class="container">
@@ -15,7 +15,7 @@
 
         <main>
             <div class="upload-section">
-                <input type="file" id="audioInput" accept="audio/*">
+                <input type="file" id="audioInput" accept="audio/*" style="display: none;">
                 <button id="uploadBtn">Choisir un fichier audio</button>
             </div>
 
@@ -23,10 +23,30 @@
                 <canvas id="visualizer"></canvas>
             </div>
 
-            <div class="controls">
-                <button id="playBtn">Lecture</button>
-                <button id="pauseBtn">Pause</button>
-                <button id="saveBtn">Sauvegarder</button>
+            <div class="controls-container">
+                <div class="playback-controls">
+                    <button id="playBtn">Lecture</button>
+                    <button id="pauseBtn">Pause</button>
+                    <button id="saveBtn">Sauvegarder</button>
+                </div>
+
+                <div class="visual-controls">
+                    <div class="control-group">
+                        <label for="visualizationMode">Mode :</label>
+                        <select id="visualizationMode">
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="colorScheme">Palette :</label>
+                        <select id="colorScheme">
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-panel">
+                <p>Cliquez sur le canvas pour changer de mode</p>
             </div>
         </main>
     </div>
