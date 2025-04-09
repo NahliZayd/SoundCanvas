@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCanvas - Générateur d'Art Audio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SoundCanvas</h1>
+            <p>Transformez votre musique en art visuel</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <input type="file" id="audioInput" accept="audio/*">
+                <button id="uploadBtn">Choisir un fichier audio</button>
+            </div>
+
+            <div class="canvas-container">
+                <canvas id="visualizer"></canvas>
+            </div>
+
+            <div class="controls">
+                <button id="playBtn">Lecture</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="saveBtn">Sauvegarder</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
